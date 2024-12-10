@@ -19,6 +19,8 @@ To start the server, write:
 
 To start client app run client/main.py
 
+To specify the server's ip, change `server_ip_port = "{your server ip}:8000"` in client/src/client.py
+
 In order for the recognition to work correctly, you need to add the names of those who may be in the group list to the file surnames.txt . This file is used to clean up the garbage that appears due to the inaccurate operation of Tesseract during recognition.
 
 ## Usage
