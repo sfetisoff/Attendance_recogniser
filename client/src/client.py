@@ -2,7 +2,7 @@ import requests
 import easygui
 import os
 
-server_ip_port = "79.164.31.212:8000"
+server_ip_port = "127.0.0.1:8000"
 
 
 def recognise_photo():
@@ -36,7 +36,7 @@ def get_file_table(filename):
         # Проверяем статус код ответа
         if response.status_code == 200:
             # Сохраняем содержимое файла
-            with open(f"client/client_data/{filename}", 'wb') as f:
+            with open(f"../client_data/{filename}", 'wb') as f:
                 f.write(response.content)
 
             print(f"Файл {filename} успешно скачан.")
@@ -67,4 +67,4 @@ def upload_file_table():
 
 
 def start_excel():
-    os.system('start excel.exe client_data/table.xlsx')
+    os.system('start excel.exe ../client_data/table.xlsx')
