@@ -1,4 +1,4 @@
-# Attendance Recogniser
+# Attendance recogniser
 
 
 ## Description
