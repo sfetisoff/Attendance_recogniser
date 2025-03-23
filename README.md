@@ -1,4 +1,4 @@
-# Schedule Recogniser
+# Attendance Recogniser
 
 
 ## Description
